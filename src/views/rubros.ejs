@@ -1,0 +1,60 @@
+<% include partials/_header %>
+
+<!-- <div class="container-fluid pt-4"> -->
+<div class="container-fluid pt-4 mt-3">
+
+  <!--<div class="row mt-3"> -->
+  <div class="row mt-3">
+    <div class="col-sm-12">
+      <div class="content-1">
+      <div class="d-flex bg-light">
+      <table class="table table-striped table-bordered table-hover">
+        <thead>
+          <tr>
+            <th> 
+            <button class="btn btn-danger btn-lg" type="button" type="submint">
+              <a href="/plast/<%= '1' %>" class="btn btn-danger btn-lg btn-block">                                     
+                <h2 class="text-light">__PLAZA_ASTURIAS__ _Restaurante_Parrilla_</h2>                                        
+              </a>  
+            </button> 
+            </th>
+            <th>
+              <button class="btn btn-danger btn-lg" type="button" type="submint">
+                <a href="/plast/snippet/<%= '85' %>" class="btn btn-danger btn-lg btn-block">                                     
+                  <h2 class="text-light">_Buenos _Aires_ _(ver)_Carta_Digital_</h2>                                        
+                </a>  
+              </button> 
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <% if (id == '1') { %>
+            <% include partials/rubroall %> 
+          <% } %>    
+
+          <% if (id == '2') { %>
+            <% include partials/rubrocaf %> 
+          <% } %>    
+
+          <% if (id == '3') { %>
+            <% include partials/rubrobeb %> 
+          <% } %>    
+
+          <% if (id == '4') { %>
+            <% include partials/rubrocom %> 
+          <% } %>    
+
+          <% if (id == '5') { %>
+            <% include partials/rubropos %> 
+          <% } %>    
+
+        </tbody>
+      </table>
+    </div> 
+    </div>
+  </div>
+  </div>
+</div>
+
+<% include partials/_footer %>

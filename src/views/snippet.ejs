@@ -1,0 +1,43 @@
+<% include partials/_headers %>
+
+<div class="container-fluid mt-3">
+   <div class="col-sm-12">
+     <button class="btn btn-danger btn-lg btn-block" type="button" type="submint">
+       <a href="/plast/<%= '1' %>" class="btn btn-danger btn-lg btn-block">                                     
+         <h6 class="text-light">PLAZA ASTURIAS - av.de Mayo 1199 - Buenos Aires - Tel.4382-7334</h6>                                        
+       </a>  
+     </button>   
+   </div>
+ </div>
+
+       <% if (id == '1') { %>
+         <% include partials/snipet01 %>
+       <% } %>      
+
+
+       
+       <% if (id == '80') { %> 
+          <% include partials/snipet80 %>  
+       <% } %> 
+
+      <% if (id == '81') { %> 
+         <% include partials/sniptcaf %>  
+      <% } %> 
+
+      <% if (id == '82') { %> 
+         <% include partials/sniptbeb %>  
+      <% } %> 
+
+      <% if (id == '83') { %> 
+         <% include partials/sniptcom %>  
+      <% } %> 
+
+      <% if (id == '84') { %> 
+         <% include partials/sniptpos %>  
+      <% } %> 
+
+      <% if (id == '85') { %> 
+         <% include partials/sniptall %>  
+      <% } %> 
+
+  <% include partials/_footer %>
